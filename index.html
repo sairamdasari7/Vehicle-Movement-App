@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Vehicle Movement on Map</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Vehicle Movement Simulator</h1>
+      <div class="controls">
+        <button id="playPauseBtn">Play</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </header>
+    <main>
+      <div id="map"></div>
+      <aside class="panel">
+        <h2>Vehicle Info</h2>
+        <div class="info"><strong>Coordinates:</strong> <span id="coords">—</span></div>
+        <div class="info"><strong>Timestamp:</strong> <span id="timestamp">—</span></div>
+        <div class="info"><strong>Elapsed:</strong> <span id="elapsed">00:00</span></div>
+        <div class="info"><strong>Speed (m/s):</strong> <span id="speed">—</span></div>
+        <div class="note">Static simulation using dummy GPS data.</div>
+      </aside>
+    </main>
+    <footer>Leaflet Map Demo</footer>
+  </div>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
